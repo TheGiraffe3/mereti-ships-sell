@@ -1,0 +1,39 @@
+# Copyright (c) 2025 by Loymdayddaud
+#
+# Sell Mereti Ships is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Sell Mereti Ships is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+event "sell mereti ships: model 8 and model 16 available"
+	shipyard "Wanderer Advanced"
+		"Model 8"
+		"Model 16"
+
+event "sell mereti ships: model 8 and model 16 unavailable"
+	shipyard "Wanderer Advanced"
+		remove "Model 8"
+		remove "Model 16"
+
+event "sell mereti ships: model 32 available"
+	shipyard "Wanderer Advanced"
+		"Model 32"
+
+event "sell mereti ships: model 64 available"
+	shipyard "Wanderer Advanced"
+		"Model 64"
+
+event "sell mereti ships: model 128 available"
+	shipyard "Wanderer Advanced"
+		"Model 128"
+
+event "sell mereti ships: model 256 available"
+	shipyard "Wanderer Advanced"
+		"Model 256"
+
+event "sell mereti ships: model 512 available"
+	shipyard "Wanderer Advanced"
+		"Model 512"

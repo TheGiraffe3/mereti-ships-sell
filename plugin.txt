@@ -1,0 +1,4 @@
+name "Sell Mereti Ships"
+about "After the Mereti become friendly, they gradually start selling you their ships."
+authors
+	Loymdayddaud

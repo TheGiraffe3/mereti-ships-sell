@@ -1,0 +1,102 @@
+# Copyright (c) 2025 by Loymdayddaud
+#
+# Sell Mereti Ships is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Sell Mereti Ships is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+mission "Sell Mereti Ships: Begin Sequence"
+	landing
+	invisible
+	to offer
+		has "event: wanderers: exiles have drones"
+	on offer
+		event "sell mereti ships: model 8 and model 16 available" 60 90
+		fail
+
+mission "Sell Mereti Ships: Model 8 and Model 16 Available"
+	landing
+	invisible
+	source
+		government "Wanderers" "Kor Mereti"
+	to offer
+		has "event: sell mereti ships: model 8 and model 16 available"
+	on offer
+		conversation
+			`A Mereti Model 8 approaches your ship as you land, and spits out a datachip no larger than a marble. It appears to be a message from... somebody, but without plugging it into your ship it's hard to tell.`
+			choice
+				`	(Disregard the message.)`
+				`	(Delay your trip to the spaceport to read the message.)`
+					goto readmessage
+			action
+				event "sell mereti ships: model 8 and model 16 unavailable"
+			`	You carefully place the data chip back into the Model 8's receptacle, and the drone uncertainly moves off.`
+				decline
+			label readmessage
+			action
+				event "sell mereti ships: model 32 available" 70 90
+			`	You head back up the stairs of the <ship>, take the data ship into the control room, and insert it into a small card reader. The chip beeps and displays its message on the console. You read:`
+			``
+			`		CAPTAIN [HUMAN, FIRST NAME]:`
+			`			FOR YOUR INFORMATION, WE WILL BEGIN SELLING YOU THE LATEST VERSION OF THE MODEL 8 AND THE MODEL 16. THIS TRUST IS NOT LIGHTLY GRANTED. PLEASE TAKE IT SERIOUSLY, AND DO REFRAIN FROM ATTACKING US.`
+			``
+			`			THE MERETI COLLECTIVE`
+			``
+			`	Evidently the Mereti now trust you enough to sell their technology to you.`
+
+mission "Sell Mereti Ships: Model 32 Available"
+	landing
+	invisible
+	source
+		government "Wanderers" "Kor Mereti"
+	to offer
+		has "event: sell mereti ships: model 32 available"
+	on offer
+		event "sell mereti ships: model 64 available" 80 120
+		dialog `A Model 8 approaches your ship and delivers a message similar to when the Mereti notified you the first time: the Model 32 will now be sold to you on some Wanderer planets.`
+
+mission "Sell Mereti Ships: Model 64 Available"
+	landing
+	invisible
+	source
+		government "Wanderers" "Kor Mereti"
+	to offer
+		has "event: sell mereti ships: model 64 available"
+	on offer
+		event "sell mereti ships: model 128 available" 100 150
+		dialog `A Model 8 approaches your ship and delivers a message similar to when the Mereti notified most recently: the Model 64 will now be sold to you on some Wanderer planets.`
+
+mission "Sell Mereti Ships: Model 128 Available"
+	landing
+	invisible
+	source
+		government "Wanderers" "Kor Mereti"
+	to offer
+		has "event: sell mereti ships: model 128 available"
+	on offer
+		event "sell mereti ships: model 256 available" 120 190
+		dialog `A Model 8 approaches your ship and delivers a message similar to when the Mereti notified you the first time: the Model 128 will now be sold to you on some Wanderer planets.`
+
+mission "Sell Mereti Ships: Model 256 Available"
+	landing
+	invisible
+	source
+		government "Wanderers" "Kor Mereti"
+	to offer
+		has "event: sell mereti ships: model 256 available"
+	on offer
+		event "sell mereti ships: model 512 available" 150 190
+		dialog `A Model 8 approaches your ship and delivers a message similar to when the Mereti notified you the first time: the Model 256 will now be sold to you on some Wanderer planets.`
+
+mission "Sell Mereti Ships: Model 512 Available"
+	landing
+	invisible
+	source
+		government "Wanderers" "Kor Mereti"
+	to offer
+		has "event: sell mereti ships: model 512 available"
+	on offer
+		dialog `A Model 8 approaches your ship and delivers a message similar to when the Mereti notified you the first time: the Model 512 will now be sold to you on some Wanderer planets.`
