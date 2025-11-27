@@ -21,7 +21,7 @@ mission "Sell Mereti Ships: Model 8 and Model 16 Available"
 	landing
 	invisible
 	source
-		government "Wanderers" "Kor Mereti"
+		government "Wanderer" "Kor Mereti"
 	to offer
 		has "event: sell mereti ships: model 8 and model 16 available"
 	on offer
@@ -51,7 +51,7 @@ mission "Sell Mereti Ships: Model 32 Available"
 	landing
 	invisible
 	source
-		government "Wanderers" "Kor Mereti"
+		government "Wanderer" "Kor Mereti"
 	to offer
 		has "event: sell mereti ships: model 32 available"
 	on offer
@@ -62,7 +62,7 @@ mission "Sell Mereti Ships: Model 64 Available"
 	landing
 	invisible
 	source
-		government "Wanderers" "Kor Mereti"
+		government "Wanderer" "Kor Mereti"
 	to offer
 		has "event: sell mereti ships: model 64 available"
 	on offer
@@ -73,7 +73,7 @@ mission "Sell Mereti Ships: Model 128 Available"
 	landing
 	invisible
 	source
-		government "Wanderers" "Kor Mereti"
+		government "Wanderer" "Kor Mereti"
 	to offer
 		has "event: sell mereti ships: model 128 available"
 	on offer
@@ -84,7 +84,7 @@ mission "Sell Mereti Ships: Model 256 Available"
 	landing
 	invisible
 	source
-		government "Wanderers" "Kor Mereti"
+		government "Wanderer" "Kor Mereti"
 	to offer
 		has "event: sell mereti ships: model 256 available"
 	on offer
@@ -95,7 +95,7 @@ mission "Sell Mereti Ships: Model 512 Available"
 	landing
 	invisible
 	source
-		government "Wanderers" "Kor Mereti"
+		government "Wanderer" "Kor Mereti"
 	to offer
 		has "event: sell mereti ships: model 512 available"
 	on offer
